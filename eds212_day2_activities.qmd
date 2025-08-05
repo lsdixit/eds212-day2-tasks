@@ -1,0 +1,10 @@
+---
+title: "eds212-tasks"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
