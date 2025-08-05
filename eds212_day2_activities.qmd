@@ -24,6 +24,33 @@ eval(dp_da)
 
 ```
 
+create plot of penguin bill length versus bill depth
+```{r}
+ggplot(data=penguins, aes(x=bill_length_mm, y=bill_depth_mm))+
+  geom_point(aes(color=species))+
+  labs(x="Penguin Bill Length (cm)",
+       y="Penguin Bill Depth (cm)",
+       title = "Penguin bill length versus bill depth")
+
+head(penguins)
+
+```
+
+jitter plot
+```{r}
+ggplot(data=penguins, aes(x=species, y=flipper_length_mm))+
+  geom_jitter(aes(color=species))+
+  labs(y="Flipper length (cm)",
+       title = "Flipper length by species")
+
+```
+
+
+
+
+
+
+
 
 
 
