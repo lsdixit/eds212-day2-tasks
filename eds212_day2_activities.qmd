@@ -5,6 +5,25 @@ format: html
 
 ```{r}
 library(tidyverse)
+library(usethis)
 library(palmerpenguins)
 ```
+
+find derivative expression and slope for each function
+```{r}
+df_dx <- D(expr = expression(x^2), name = "x")
+x <- 3
+eval(df_dx)
+
+```
+
+```{r}
+dp_da <- D(expr = expression(2*(3*a+2)^4-5), name = "a")
+a <- 1.2
+eval(dp_da)
+
+```
+
+
+
 
